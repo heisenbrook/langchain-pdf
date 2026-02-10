@@ -1,14 +1,10 @@
 # First Time Setup
 
-## Using Pipenv
+## Using Codespace
+
+No need for configuration (.devcontainer + requirements.txt has all the configuration needed on starting the codespace). Just run this line in bash window.
 
 ```
-# Install dependencies
-pipenv install
-
-# Create a virtual environment
-pipenv shell
-
 # Initialize the database
 flask --app app.web init-db
 
@@ -24,13 +20,7 @@ Commands to start each are listed below. If you need to stop them, select the te
 
 ### To run the Python server
 
-Open a new terminal window and create a new virtual environment:
-
-```
-pipenv shell
-```
-
-Then:
+Open a new terminal window and run:
 
 ```
 inv dev
@@ -38,13 +28,7 @@ inv dev
 
 ### To run the worker
 
-Open a new terminal window and create a new virtual environment:
-
-```
-pipenv shell
-```
-
-Then:
+Open a new terminal window and run:
 
 ```
 inv devworker
@@ -58,13 +42,7 @@ redis-server
 
 ### To reset the database
 
-Open a new terminal window and create a new virtual environment:
-
-```
-pipenv shell
-```
-
-Then:
+Open a new terminal window and run:
 
 ```
 flask --app app.web init-db
