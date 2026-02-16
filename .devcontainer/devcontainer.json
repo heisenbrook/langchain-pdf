@@ -5,31 +5,9 @@
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.11",
       "installTools": true
-<<<<<<< HEAD
     }
   },
-  "postCreateCommand": [
-    "sudo apt-get update && sudo apt-get install -y git-lfs && git lfs install --force",
-    "python -V && pip -V && pip install -r requirements.txt"
-  ],
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "ms-toolsai.jupyter"
-      ],
-      "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
-        "python.analysis.typeCheckingMode": "basic"
-      }
-    }
-  },
-=======
-    }
-  },
-
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y git-lfs && git lfs install --force && pip install -r requirements.txt",
->>>>>>> bcfe054 (Updated devcontainer.json)
   "remoteUser": "vscode",
   "portsAttributes": {
     "8000": { "label": "app", "onAutoForward": "notify" }
