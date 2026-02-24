@@ -1,3 +1,3 @@
-from langchain import OpenAIEmbeddings
+from 
 
 embeddings = OpenAIEmbeddings()
