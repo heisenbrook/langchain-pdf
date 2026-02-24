@@ -6,7 +6,7 @@ Flask==3.0.0
 flask_sqlalchemy==3.0.3
 flask_cors==4.0.0
 langchain==0.0.352
-langchain-openai==0.0.5
+langchain_openai==0.0.5
 python-dotenv==1.0.0
 invoke==2.2.0
 pinecone-client==3.2.2
