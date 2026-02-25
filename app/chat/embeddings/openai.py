@@ -1,3 +1,3 @@
-from langchain import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings()
